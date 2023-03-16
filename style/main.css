@@ -1,0 +1,46 @@
+html,
+body {
+  box-sizing: content-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Amatic SC", cursive;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.arrowBack {
+  position: relative;
+}
+
+#up {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  position: fixed;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar {
+  font-size: x-large;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0e1037;
+}
+
+.navbar a {
+  color: white;
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: black;
+}

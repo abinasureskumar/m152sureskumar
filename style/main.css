@@ -3,11 +3,12 @@ body {
   box-sizing: content-box;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: "Amatic SC", cursive;
+  font-family: 'Delicious Handrawn', cursive;
   background-color: black;
   color: whitesmoke;
 }
 
+/* arrow up */
 .arrowBack {
   position: relative;
 }
@@ -23,24 +24,103 @@ body {
   cursor: pointer;
 }
 
-.navbar {
-  font-size: x-large;
-  color: whitesmoke;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #0e1037;
+/* Name, Logo */
+.itemOne {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
 }
 
-.navbar a {
-  color: white;
-  float: right;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
+.instagramLink {
+  position: absolute;
+  z-index: 9999;
   text-decoration: none;
 }
 
-.navbar a:hover:not(.active) {
-  background-color: black;
+.logo {
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.name {
+  margin-top: 20px;
+  justify-content: flex-start;
+  font-size: 40px;
+}
+
+#firstName {
+  color: rgb(240, 240, 240);
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+#lastName {
+  color: rgba(201, 201, 201, 0.801);
+}
+
+/* Sidenav */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #41414142;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: right;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#menu {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* change size of sidenav on smaller screen */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }

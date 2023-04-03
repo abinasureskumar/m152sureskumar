@@ -14,22 +14,6 @@ body {
   background-size: cover;
 }
 
-/* arrow up */
-.arrowBack {
-  position: relative;
-}
-
-#up {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 20px;
-  margin-bottom: 15px;
-  position: fixed;
-  display: none;
-  cursor: pointer;
-}
-
 /* Name, Logo */
 .itemOne {
   display: flex;

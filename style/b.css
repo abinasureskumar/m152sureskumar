@@ -1,0 +1,48 @@
+html,
+body {
+  box-sizing: content-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Delicious Handrawn", cursive;
+}
+
+/* arrow up */
+.arrowBack {
+  position: relative;
+}
+
+#up {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  position: fixed;
+  display: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+.home-container {
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 100vh;
+}
+
+.first-container {
+  background-color: #ff0000;
+  width: 100%;
+  height: 100vh;
+}
+
+.second-container {
+  background-color: #f2ff00;
+  width: 100%;
+  height: 100vh;
+}
+
+.third-container {
+  background-color: #ff9500;
+  width: 100%;
+  height: 100vh;
+}

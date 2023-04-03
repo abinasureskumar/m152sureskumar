@@ -1,11 +1,17 @@
 html,
 body {
+  width: 100%;
+  height: 100vh;
   box-sizing: content-box;
   margin: 0;
   scroll-behavior: smooth;
   font-family: 'Delicious Handrawn', cursive;
   background-color: black;
   color: whitesmoke;
+  background-image: url(/style/img/home.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* arrow up */
@@ -57,10 +63,10 @@ body {
 }
 
 #lastName {
-  color: rgba(201, 201, 201, 0.801);
+  color: rgba(173, 173, 173, 0.817);
 }
 
-/* Sidenav */
+/* SideNav */
 .sidebar {
   height: 100%;
   width: 0;

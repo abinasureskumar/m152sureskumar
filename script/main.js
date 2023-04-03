@@ -13,7 +13,6 @@ function scrollEvent() {
   if (document.documentElement.scrollTop >= 20) {
     if (mybutton.style.display == "none") {
       mybutton.style.display = "block";
-      // console.log(document.documentElement.scrollTop)
     }
   } else {
     mybutton.style.display = "none";
@@ -24,9 +23,9 @@ function scrollEvent() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  window.setTimeout(function () {
-    location.href = "./index.html";
-  }, 800); //changes URL to home page
+  // window.setTimeout(function () {
+  //   location.href = "./index.html";
+  // }, 800); //changes URL to home page
 }
 
 function openNav() {

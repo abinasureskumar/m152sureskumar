@@ -30,7 +30,7 @@ function topFunction() {
 }
 
 function openNav() {
-  document.getElementById("navSidebar").style.width = "250px";
+  document.getElementById("navSidebar").style.width = "400px";
   document.getElementById("menu").style.marginRight = "0px";
 }
 

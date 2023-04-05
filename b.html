@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,17 +11,55 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style/b.css" />
+    <link rel="stylesheet" type="text/css" href="style/sidenav.css" />
     <script type="text/javascript" src="/script/main.js"></script>
     <title>B- Storytelling, Wireframes, Mockups</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- BACK TO TOP -->
     <div class="arrowBack">
-        <img id="up" src="./style/img/up.png" onclick="topFunction()">
+      <img id="up" src="./style/img/up.png" onclick="topFunction()" />
     </div>
 
     <!-- HOME-CONTAINER -->
-    <div id="home" class="home-container"></div>
+    <div id="home" class="home-container">
+      <!-- Navigation -->
+      <div id="navSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/index.html">A- Home</a>
+        <a href="./b.html">B- Storytelling, Wireframes, Mockups</a>
+        <a href="./c.html">C- Styleguide</a>
+        <a href="./d.html">D- Urheberrecht</a>
+        <a href="./e.html">E- Copyright und Lizenzen</a>
+        <a href="./f.html">F- DSGVO, Cookie-Warnung, Impressum</a>
+        <a href="./g.html">G- Bildformate, Videoformate, Soundformate</a>
+        <a href="./h.html">H- Animationen</a>
+      </div>
+
+      <div id="menu" class="menu">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+
+      <div class="cards">
+        <div class="card cardOne">
+          <a href="#first">
+            <p>Storytelling</p>
+          </a>
+        </div>
+
+        <div class="card cardTwo">
+          <a href="#second">
+            <p>Wireframes</p>
+          </a>
+        </div>
+
+        <div class="card cardThree">
+          <a href="#third">
+            <p>Mockups</p>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- STORYTELLING-CONTAINER -->
     <div id="first" class="first-container"></div>
@@ -31,5 +69,5 @@
 
     <!-- MOCKUPS-CONTAINER -->
     <div id="third" class="third-container"></div>
-</body>
+  </body>
 </html>

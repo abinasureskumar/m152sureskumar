@@ -5,13 +5,13 @@ body {
   box-sizing: content-box;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: 'Delicious Handrawn', cursive;
+  font-family: "Delicious Handrawn", cursive;
   background-color: black;
   color: whitesmoke;
-  background-image: url(/style/img/home.jpg);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-image: url(./img/home_animation.gif);
+  background-position: right;
+  background-size: 40%; */
 }
 
 /* Name, Logo */
@@ -48,4 +48,36 @@ body {
 
 #lastName {
   color: rgb(255, 255, 255);
+}
+
+/* #bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+} */
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.bgImage img {
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(255, 255, 255, 0.431));
+}
+
+.title .p1 {
+  font-size: 100px;
+  margin: 0;
+  text-shadow: 0 0 5px #8585df, 0 0 5px #c94d77;
+}
+
+.title .p2 {
+  font-size: 40px;
+  text-shadow: 0 0 3px #8585df, 0 0 3px #c94d77;
 }

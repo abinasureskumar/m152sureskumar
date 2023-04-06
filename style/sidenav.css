@@ -63,3 +63,18 @@
     font-size: 18px;
   }
 }
+
+/**
+*
+    HOME ICON
+*
+*/
+.homeIcon {
+  position: absolute;
+  padding: 10px 15px;
+  opacity: 35%;
+}
+
+.homeIcon:hover {
+  opacity: 100%;
+}

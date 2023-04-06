@@ -13,25 +13,113 @@
     <link rel="stylesheet" type="text/css" href="style/c.css" />
     <link rel="stylesheet" type="text/css" href="style/sidenav.css" />
     <script type="text/javascript" src="/script/main.js"></script>
-    <link rel="icon" href="./style/img/LTSmiley6.png" type="image/png" sizes="32x32">
+    <link
+      rel="icon"
+      href="./style/img/LTSmiley6.png"
+      type="image/png"
+      sizes="32x32"
+    />
     <title>C- Styleguide</title>
   </head>
   <body>
-    <!-- Navigation -->
-    <div id="navSidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="/index.html">A- Home</a>
-      <a href="./b.html">B- Storytelling, Wireframes, Mockups</a>
-      <a href="./c.html">C- Styleguide</a>
-      <a href="./d.html">D- Urheberrecht</a>
-      <a href="./e.html">E- Copyright und Lizenzen</a>
-      <a href="./f.html">F- DSGVO, Cookie-Warnung, Impressum</a>
-      <a href="./g.html">G- Bildformate, Videoformate, Soundformate</a>
-      <a href="./h.html">H- Animationen</a>
+    <div class="homeContainer">
+      <div class="containerRight">
+        <!-- Navigation -->
+        <div id="navSidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <a href="/index.html">A- Home</a>
+          <a href="./b.html">B- Storytelling, Wireframes, Mockups</a>
+          <a href="./c.html">C- Styleguide</a>
+          <a href="./d.html">D- Urheberrecht</a>
+          <a href="./e.html">E- Copyright und Lizenzen</a>
+          <a href="./f.html">F- DSGVO, Cookie-Warnung, Impressum</a>
+          <a href="./g.html">G- Bildformate, Videoformate, Soundformate</a>
+          <a href="./h.html">H- Animationen</a>
+        </div>
+
+        <div id="menu" class="menu">
+          <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+
+        <!-- curved text -->
+        <svg viewBox="0 0 425 300">
+          <path
+            id="curve"
+            d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145"
+          />
+          <text x="25">
+            <textPath xlink:href="#curve">
+              Font Family: "Comfortaa", cursive;
+            </textPath>
+          </text>
+        </svg>
+
+        <!-- circles for color palette -->
+        <div class="colors">
+          <div class="ball b2"></div>
+          <div class="ball b3"></div>
+          <div class="ball b4"></div>
+          <div class="ball b5"></div>
+          <div class="ball b6"></div>
+          <div class="ball b7"></div>
+        </div>
+      </div>
+
+      <div class="containerLeft">
+        <div class="homeIcon">
+          <a href="./index.html">
+            <img src="./style/img/home_icon_black.png" width="60px" />
+          </a>
+        </div>
+
+        <div class="textContainer">
+          <p class="p1">Styleguide</p>
+          <a href="/index.html">
+            <div class="card">
+              <p>Home</p>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="card">
+              <p>Storytelling, Wireframes, Mockups</p>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="card">
+              <p>Styleguide</p>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="card">
+              <p>Urheberrecht</p>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="card">
+              <p>Copyright und Lizenzen</p>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="card">
+              <p>DSVGO, Cookie-Warnung, Impressum</p>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="card">
+              <p>Bild-, Video-, Soundformate</p>
+            </div>
+          </a>
+          <a href="/index.html">
+            <div class="card">
+              <p>Animationen</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div id="menu" class="menu">
-      <button class="openbtn" onclick="openNav()">☰</button>
-    </div>
+    <div id="secondContainer" class="secondContainer"></div>
   </body>
 </html>

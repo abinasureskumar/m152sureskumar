@@ -1,0 +1,200 @@
+html,
+body {
+  box-sizing: content-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Comfortaa", cursive;
+  background-color: #000000;
+}
+
+/**
+*
+    HOME CONTAINER
+*
+*/
+.homeContainer {
+  width: 100%;
+  height: 100vh;
+}
+/* left container */
+.containerLeft {
+  width: 60%;
+  height: 100vh;
+  background-color: white;
+  float: left;
+  color: #111;
+}
+
+.textContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7%;
+  gap: 25px;
+}
+
+.textContainer .p1 {
+  padding-top: 15%;
+  padding-bottom: 6%;
+  font-size: 120px;
+  margin: 0 !important;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 50px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.431);
+  border: 2px solid #000000;
+  transition: transform 0.5s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.textContainer a:visited {
+  color: #000000;
+}
+
+.card:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+/* right container */
+.containerRight {
+  width: 40%;
+  height: 100vh;
+  float: right;
+  background: rgb(179, 152, 255);
+  background: linear-gradient(
+    199deg,
+    rgba(179, 152, 255, 1) 35%,
+    rgba(160, 132, 255, 1) 65%,
+    rgba(163, 131, 250, 1) 100%
+  );
+}
+
+/* curved text */
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #ffffff;
+  font-size: 29px;
+}
+
+svg {
+  position: absolute;
+}
+
+/* circles for coor palete */
+.colors {
+  display: flex;
+  position: relative;
+  margin-top: 50%;
+}
+
+.ball {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto 0;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.ball:hover {
+  transform: translate(0, -30px);
+}
+
+.b2 {
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgba(239, 230, 253, 1) 1px,
+    rgba(98, 0, 237, 1) 3%,
+    rgba(49, 0, 119, 1) 60%,
+    rgba(10, 0, 24, 1) 100%
+  );
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.b3 {
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgba(255, 255, 255, 1) 1px,
+    rgba(208, 179, 250, 1) 3%,
+    rgba(145, 77, 242, 1) 60%,
+    rgba(98, 0, 237, 1) 100%
+  );
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.b4 {
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgba(255, 255, 255, 1) 1px,
+    rgba(231, 212, 254, 1) 3%,
+    rgba(192, 153, 248, 1) 60%,
+    rgba(161, 102, 244, 1) 100%
+  );
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.b5 {
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgba(255, 255, 255, 1) 1px,
+    rgba(202, 198, 255, 1) 3%,
+    rgba(149, 142, 254, 1) 60%,
+    rgba(78, 66, 254, 1) 100%
+  );
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.b6 {
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgba(239, 230, 253, 1) 1px,
+    rgba(113, 104, 254, 1) 3%,
+    rgba(70, 59, 229, 1) 60%,
+    rgba(11, 0, 178, 1) 100%
+  );
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.b7 {
+  background: radial-gradient(
+    circle at 65% 15%,
+    rgba(239, 230, 253, 1) 1px,
+    rgba(84, 77, 201, 1) 3%,
+    rgba(11, 0, 178, 1) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+/**
+*
+    SECOND CONTAINER
+*
+*/
+.secondContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}

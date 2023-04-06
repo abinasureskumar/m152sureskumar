@@ -6,12 +6,7 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Comfortaa", cursive;
-  background-color: black;
   color: whitesmoke;
-  /* background-repeat: no-repeat;
-  background-image: url(./img/home_animation.gif);
-  background-position: right;
-  background-size: 40%; */
   background: rgb(152, 87, 255);
   background: linear-gradient(
     199deg,
@@ -78,7 +73,6 @@ body {
   -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.457));
   filter: drop-shadow(7px 8px 8px rgba(255, 255, 255, 0.431));
   opacity: 20%;
-  transition: transform 0.25s;
 }
 
 .title .p1 {

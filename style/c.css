@@ -72,16 +72,212 @@ body {
   transform: scale(1.1);
 }
 
-.idk {
+.menu-shapes {
   display: flex;
   align-items: stretch;
 }
 
-.swirlImg {
+/* shapes black & white */
+.shapes {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
+.zero {
+  margin-left: 80px;
+  
+  position: relative;
+  -webkit-animation: onee 3s;
+  animation: onee 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.one {
+  margin-left: 130px;
+  margin-top: -70px;
+
+  position: relative;
+  -webkit-animation: onee 3s;
+  animation: onee 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+@-webkit-keyframes onee {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes onee {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.two {
+  margin-left: 100px;
+  margin-top: 40px;
+
+  position: relative;
+  -webkit-animation: twoo 3s;
+  animation: twoo 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.three {
+  margin-left: 180px;
+
+  position: relative;
+  -webkit-animation: twoo 3s;
+  animation: twoo 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.four {
+  margin-left: 130px;
+  margin-top: -150px;
+
+  position: relative;
+  -webkit-animation: twoo 3s;
+  animation: twoo 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+@-webkit-keyframes twoo {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes twoo {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.five {
+  margin-top: 90px;
+
+  position: relative;
+  -webkit-animation: threee 3s;
+  animation: threee 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+@-webkit-keyframes threee {
+  from {
+    top: -600px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes threee {
+  from {
+    top: -600px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.six {
+  margin-left: 150px;
+  margin-top: -80px;
+
+  position: relative;
+  -webkit-animation: fourr 3s;
+  animation: fourr 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.seven {
+  margin-top: -80px;
+
+  position: relative;
+  -webkit-animation: fourr 3s;
+  animation: fourr 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+@-webkit-keyframes fourr {
+  from {
+    top: -800px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes fourr {
+  from {
+    top: -800px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.eight {
+  margin-top: 60px;
+  margin-left: 100px;
+
+  position: relative;
+  -webkit-animation: fivee 3s;
+  animation: fivee 3s;
+
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+@-webkit-keyframes fivee {
+  from {
+    top: -900px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes fivee {
+  from {
+    top: -900px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
 /**
 *
     (HOME) RIGHT CONTAINER

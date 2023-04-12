@@ -308,13 +308,14 @@ text {
 
 svg {
   position: absolute;
+  margin-top: 10%;
 }
 
 /* circles for color palete */
 .colors {
   display: flex;
   position: relative;
-  margin-top: 50%;
+  margin-top: 70%;
 }
 
 .ball {

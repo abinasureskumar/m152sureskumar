@@ -1,0 +1,24 @@
+html,
+body {
+  box-sizing: content-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Comfortaa", cursive;
+  width: 100%;
+  height: 100vh;
+  color: #000000;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    199deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(231, 212, 254, 1) 35%,
+    rgba(192, 153, 248, 1) 62%,
+    rgba(161, 102, 244, 1) 100%
+  );
+}
+
+.bgImage img {
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(255, 255, 255, 0.431));
+  opacity: 20%;
+}

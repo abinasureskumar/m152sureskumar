@@ -8,6 +8,22 @@ html {
   background: #080719;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(174, 174, 174);
+  background: linear-gradient(
+    164deg,
+    rgba(174, 174, 174, 0.031) 12%,
+    rgba(255, 255, 255, 1) 47%,
+    rgba(196, 196, 196, 0) 100%
+  );
+}
+
 /* cards */
 .cards {
   padding-top: 100px;

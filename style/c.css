@@ -7,6 +7,22 @@ body {
   background-color: #000000;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    48deg,
+    rgba(255, 255, 255, 1) 26%,
+    rgba(0, 0, 0, 1) 53%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
 /**
 *
     HOME CONTAINER
@@ -86,7 +102,7 @@ body {
 
 .zero {
   margin-left: 80px;
-  
+
   position: relative;
   -webkit-animation: onee 3s;
   animation: onee 3s;

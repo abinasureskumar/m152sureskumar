@@ -23,6 +23,22 @@ body {
   width: 50px;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    48deg,
+    rgba(255, 255, 255, 1) 26%,
+    rgba(0, 0, 0, 1) 53%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
 /**
 *
     HOME CONTAINER
@@ -39,7 +55,7 @@ body {
     rgba(179, 152, 255, 1) 33%,
     rgba(151, 121, 253, 1) 61%,
     rgba(119, 97, 244, 1) 79%,
-    rgba(57, 50, 228, 1) 100%
+    rgb(57, 50, 228) 100%
   );
 }
 
@@ -111,8 +127,15 @@ body {
 .first-container {
   width: 100%;
   height: 100vh;
-  color: #a8a8a8;
-  background-color: red;
+  color: #ffffff;
+  background: rgb(179, 152, 255);
+  background: linear-gradient(
+    341deg,
+    rgba(179, 152, 255, 1) 33%,
+    rgba(151, 121, 253, 1) 61%,
+    rgba(119, 97, 244, 1) 79%,
+    rgba(57, 50, 228, 1) 100%
+  );
 }
 
 /**
@@ -123,8 +146,15 @@ body {
 .second-container {
   width: 100%;
   height: 100vh;
-  color: #fc4768;
-  background-color: blue;
+  color: #ffffff;
+  background: rgb(179, 152, 255);
+  background: linear-gradient(
+    169deg,
+    rgba(179, 152, 255, 1) 33%,
+    rgba(151, 121, 253, 1) 61%,
+    rgba(119, 97, 244, 1) 79%,
+    rgba(57, 50, 228, 1) 100%
+  );
 }
 
 /**
@@ -135,6 +165,13 @@ body {
 .third-container {
   width: 100%;
   height: 100vh;
-  color: #ffff33;
-  background-color: white;
+  color: #ffffff;
+  background: rgb(179, 152, 255);
+  background: linear-gradient(
+    11deg,
+    rgba(179, 152, 255, 1) 33%,
+    rgba(151, 121, 253, 1) 61%,
+    rgba(119, 97, 244, 1) 79%,
+    rgba(57, 50, 228, 1) 100%
+  );
 }

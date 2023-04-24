@@ -28,6 +28,7 @@ function topFunction() {
   // }, 800); //changes URL to home page
 }
 
+//navigation
 function openNav() {
   document.getElementById("navSidebar").style.width = "400px";
   document.getElementById("menu").style.marginRight = "0px";

@@ -16,12 +16,9 @@ body {
 }
 
 .txt_container {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   color: #ffffff;
+  margin: auto;
+  width: 50%;
 }
 
 fieldset {
@@ -29,6 +26,10 @@ fieldset {
   margin: 2rem 0;
   width: 40%;
   color: rgb(0, 0, 0);
+}
+
+legend {
+  color: #ffffff;
 }
 
 fieldset legend {
@@ -53,7 +54,13 @@ button[type="submit"] {
 
 /* Any correct answer on any answered question, highlight in light green */
 :valid .answer__item--is-correct {
-  background-color: rgba(61, 181, 64, 0.6);
+  background: rgb(2, 213, 180);
+  background: linear-gradient(
+    65deg,
+    rgba(2, 213, 180, 1) 7%,
+    rgba(103, 238, 192, 1) 30%,
+    rgba(255, 255, 255, 1) 76%
+  );
   transition: 0.5s;
 }
 
@@ -69,13 +76,25 @@ button[type="submit"] {
 /* Any chosen answer, highlight in red */
 :checked + .answer__item {
   color: #ffffff;
-  background-color: #c70000;
+  background: rgb(255, 105, 55);
+  background: linear-gradient(
+    65deg,
+    rgba(255, 105, 55, 1) 26%,
+    rgba(250, 71, 92, 1) 53%,
+    rgba(247, 41, 126, 1) 100%
+  );
   transition: 0.5s;
 }
 
 /* Any correctly chosen answer, highlight in bright green */
 :checked + .answer__item--is-correct {
-  background-color: #3db540;
+  background: rgb(1, 213, 175);
+  background: linear-gradient(
+    65deg,
+    rgba(1, 213, 175, 1) 7%,
+    rgba(10, 215, 158, 1) 30%,
+    rgba(40, 223, 156, 1) 76%
+  );
   transition: 0.5s;
 }
 

@@ -6,19 +6,116 @@ body {
   font-family: "Comfortaa", cursive;
   width: 100%;
   height: 100vh;
-  color: #000000;
-  background: rgb(255, 255, 255);
+  background: rgb(188, 141, 254);
   background: linear-gradient(
-    199deg,
-    rgba(255, 255, 255, 1) 5%,
-    rgba(231, 212, 254, 1) 35%,
-    rgba(192, 153, 248, 1) 62%,
-    rgba(161, 102, 244, 1) 100%
+    228deg,
+    rgba(188, 141, 254, 1) 26%,
+    rgba(163, 105, 245, 1) 53%,
+    rgba(106, 39, 201, 1) 100%
   );
 }
 
-.bgImage img {
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.457));
-  filter: drop-shadow(7px 8px 8px rgba(255, 255, 255, 0.431));
-  opacity: 20%;
+.txt_container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+fieldset {
+  border: 0;
+  margin: 2rem 0;
+  width: 40%;
+  color: rgb(0, 0, 0);
+}
+
+fieldset legend {
+  font-weight: 700;
+}
+
+.answer__item {
+  background-color: #f6f6f6;
+  border-radius: 30px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  margin: 0.25rem 0;
+}
+
+/* Hide Radio Buttons and Submit Button */
+input[type="radio"],
+button[type="submit"] {
+  display: none;
+}
+
+/* Any correct answer on any answered question, highlight in light green */
+:valid .answer__item--is-correct {
+  background-color: rgba(61, 181, 64, 0.6);
+  transition: 0.5s;
+}
+
+/* Show any extra explanatory text */
+.answer__reveal-text {
+  display: none;
+}
+:valid .answer__reveal-text {
+  display: block;
+  transition: 0.5s;
+}
+
+/* Any chosen answer, highlight in red */
+:checked + .answer__item {
+  color: #ffffff;
+  background-color: #c70000;
+  transition: 0.5s;
+}
+
+/* Any correctly chosen answer, highlight in bright green */
+:checked + .answer__item--is-correct {
+  background-color: #3db540;
+  transition: 0.5s;
+}
+
+/* Show the icon for the selected answer */
+:checked + .answer__item .answer__icon {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/* prevent chosing another answer once chosen */
+:valid {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+:valid + .answer__item {
+  pointer-events: none;
+}
+
+/* keep track of score */
+form {
+  counter-reset: quiz-score;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+:checked + .answer__item--is-correct {
+  counter-increment: quiz-score;
+}
+.score:after {
+  content: counter(quiz-score) "/" attr(data-question-count);
+}
+
+/* show score once quiz has been completed */
+.message {
+  display: none;
+}
+form:valid .message {
+  display: block;
 }

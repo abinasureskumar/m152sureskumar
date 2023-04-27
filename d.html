@@ -23,6 +23,11 @@
     <title>D- Urheberrecht</title>
   </head>
   <body>
+    <!-- BACK TO TOP -->
+    <div class="arrowBack">
+      <img id="up" src="./style/img/up.png" onclick="topFunction()" />
+    </div>
+    
     <div class="homeIcon">
       <a href="./index.html">
         <img src="./style/img/home_icon_white.png" width="60px" />
@@ -112,115 +117,133 @@ Es gibt auch bestimmte Branchen, die zusätzliche Informationen im Impressum ang
         </p>
       </div>
     </div>
-
+    <hr class="solid">
     <div class="quiz_container">
       <form method="POST" class="is-not-results">
+        <!-- 1 -->
         <fieldset>
-          <legend>1. Was regelt das Urheberrechtsgesetz?</legend>
+          <legend>1. Was regelt das Urheberrechtsgesetz? </legend>
           <div class="answers">
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[0]"
-                id="answer-0-1"
-                value="1"
-                required
-              />
-              <label
-                for="answer-0-1"
-                class="answer__item answer__item--is-correct"
-              >
-                Answer 1
-                <span class="answer__reveal-text">Explanation</span>
+              <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+              <label for="answer-0-1" class="answer__item">
+                A) Den Schutz von Tieren 
               </label>
             </div>
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[0]"
-                id="answer-0-2"
-                value="2"
-                required
-              />
-              <label for="answer-0-2" class="answer__item"> Answer 2 </label>
+              <input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
+              <label for="answer-0-2" class="answer__item">
+                B) Die Vergabe von Patentrechten
+                          </label>
             </div>
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[0]"
-                id="answer-0-3"
-                value="3"
-                required
-              />
-              <label for="answer-0-3" class="answer__item"> Answer 3 </label>
+              <input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
+              <label for="answer-0-3" class="answer__item answer__item--is-correct">
+                C) Den Schutz geistigen Eigentums 
+                      </label>
             </div>
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[0]"
-                id="answer-0-4"
-                value="4"
-                required
-              />
-              <label for="answer-0-4" class="answer__item"> Answer 4 </label>
+              <input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
+              <label for="answer-0-4" class="answer__item">
+                D) Die Regulierung von Arbeitsverhältnissen
+                      </label>
             </div>
           </div>
         </fieldset>
+        <!-- 2 -->
         <fieldset>
-          <legend>Question2</legend>
+          <legend>2. Wie lange beträgt die Schutzdauer für geschützte Werke?</legend>
           <div class="answers">
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[1]"
-                id="answer-1-1"
-                value="1"
-                required
-              />
-              <label for="answer-1-1" class="answer__item"> Answer 1 </label>
+              <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+              <label for="answer-1-1" class="answer__item">
+                A) Mindestens 50 Jahre nach dem Tod des Urhebers  
+                      </label>
             </div>
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[1]"
-                id="answer-1-2"
-                value="2"
-                required
-              />
-              <label for="answer-1-2" class="answer__item"> Answer 2 </label>
+              <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+              <label for="answer-1-2" class="answer__item">
+                B) Mindestens 100 Jahre nach dem Tod des Urhebers 
+                      </label>
             </div>
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[1]"
-                id="answer-1-3"
-                value="3"
-                required
-              />
-              <label
-                for="answer-1-3"
-                class="answer__item answer__item--is-correct"
-              >
-                Answer 3
-                <span class="answer__reveal-text">Explanation</span>
+              <input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
+              <label for="answer-1-3" class="answer__item answer__item--is-correct">
+                C) Mindestens 70 Jahre nach dem Tod des Urhebers
               </label>
             </div>
             <div class="answer">
-              <input
-                type="radio"
-                name="answers[1]"
-                id="answer-1-4"
-                value="4"
-                required
-              />
-              <label for="answer-1-4" class="answer__item"> Answer 4 </label>
+              <input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
+              <label for="answer-1-4" class="answer__item">
+                D) Schutzdauer variiert je nach Art des Werkes
+                      </label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- 3 -->
+        <fieldset>
+          <legend>3. Was ist das Urheberpersönlichkeitsrecht? </legend>
+          <div class="answers">
+            <div class="answer">
+              <input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+              <label for="answer-2-1" class="answer__item">
+                A) Das Recht des Urhebers auf eine angemessene Vergütung  
+                      </label>
+            </div>
+            <div class="answer">
+              <input type="radio" name="answers[2]" id="answer-2-2" value="2" required>
+              <label for="answer-2-2" class="answer__item answer__item--is-correct">
+                B) Das Recht des Urhebers, seine Werke zu veröffentlichen oder zu widerrufen
+                      </label>
+            </div>
+            <div class="answer">
+              <input type="radio" name="answers[2]" id="answer-2-3" value="3" required>
+              <label for="answer-2-3" class="answer__item">
+                C) Das Recht des Urhebers, seine Werke zu verändern
+              </label>
+            </div>
+            <div class="answer">
+              <input type="radio" name="answers[2]" id="answer-2-4" value="4" required>
+              <label for="answer-2-4" class="answer__item">
+                D) Das Recht des Urhebers, die Nutzung seiner Werke zu untersagen
+                      </label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- 4 -->
+        <fieldset>
+          <legend>4. Was sind Verwertungsgesellschaften?</legend>
+          <div class="answers">
+            <div class="answer">
+              <input type="radio" name="answers[3]" id="answer-3-1" value="1" required>
+              <label for="answer-3-1" class="answer__item answer__item--is-correct">
+                A) Organisationen, die die Rechte der Urheber verwalten und Vergütungen sammeln und verteilen   
+                      </label>
+            </div>
+            <div class="answer">
+              <input type="radio" name="answers[3]" id="answer-3-2" value="2" required>
+              <label for="answer-3-2" class="answer__item">
+                B) Unternehmen, die geschützte Werke ohne Genehmigung nutzen
+                      </label>
+            </div>
+            <div class="answer">
+              <input type="radio" name="answers[3]" id="answer-3-3" value="3" required>
+              <label for="answer-3-3" class="answer__item">
+                C) Personen, die das Urheberrecht verletzen 
+              </label>
+            </div>
+            <div class="answer">
+              <input type="radio" name="answers[3]" id="answer-3-4" value="4" required>
+              <label for="answer-3-4" class="answer__item">
+                D) Organisationen, die den Schutz von Tieren unterstützen
+                      </label>
             </div>
           </div>
         </fieldset>
         <button type="submit">Submit answers</button>
-
+      
         <div class="message">
-          <p>Your Score: <span class="score" data-question-count="2"></span></p>
+          <p>Your Score: <span class="score" data-question-count="12"></span></p>
         </div>
       </form>
     </div>

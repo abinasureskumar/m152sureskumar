@@ -15,6 +15,23 @@ body {
   );
 }
 
+/* arrow up */
+.arrowBack {
+  position: relative;
+}
+
+#up {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  position: fixed;
+  display: none;
+  cursor: pointer;
+  width: 50px;
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -59,7 +76,7 @@ li {
 /* quiz */
 fieldset {
   border: 0;
-  margin: 2rem 0;
+  margin: 1rem 0;
   width: 40%;
   color: rgb(0, 0, 0);
 }
@@ -97,15 +114,6 @@ button[type="submit"] {
     rgba(103, 238, 192, 1) 30%,
     rgba(255, 255, 255, 1) 76%
   );
-  transition: 0.5s;
-}
-
-/* Show any extra explanatory text */
-.answer__reveal-text {
-  display: none;
-}
-:valid .answer__reveal-text {
-  display: block;
   transition: 0.5s;
 }
 

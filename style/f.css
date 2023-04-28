@@ -1,0 +1,17 @@
+html,
+body {
+  box-sizing: content-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Comfortaa", cursive;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  background: rgb(84, 77, 201);
+  background: linear-gradient(
+    214deg,
+    rgba(84, 77, 201, 1) 7%,
+    rgba(60, 51, 193, 1) 43%,
+    rgba(11, 0, 178, 1) 70%
+  );
+}

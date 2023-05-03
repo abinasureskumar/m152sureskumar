@@ -7,22 +7,6 @@ body {
   background-color: #000000;
 }
 
-/* scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-  background-color: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    48deg,
-    rgba(255, 255, 255, 1) 26%,
-    rgba(0, 0, 0, 1) 53%,
-    rgba(255, 255, 255, 1) 100%
-  );
-}
-
 /**
 *
     HOME CONTAINER
@@ -51,6 +35,7 @@ body {
   flex-direction: column;
   padding-left: 7%;
   gap: 25px;
+  color: #000000;
 }
 
 .textContainer .p1 {
@@ -73,14 +58,36 @@ body {
   align-items: center;
 }
 
-.textContainer .p2 {
-  font-size: 20px;
-  text-decoration: none;
-  color: #000000;
+.p3 {
+  font-size: 48px;
 }
 
-.textContainer a:visited {
-  color: #000000;
+.p4 {
+  font-size: 40px;
+}
+
+.p5 {
+  font-size: 35px;
+}
+
+.p6 {
+  font-size: 30px;
+}
+
+.p7 {
+  font-size: 25px;
+}
+
+.p8 {
+  font-size: 20px;
+}
+
+.p9 {
+  font-size: 15px;
+}
+
+.p10 {
+  font-size: 10px;
 }
 
 .card:hover {
@@ -324,14 +331,14 @@ text {
 
 svg {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 /* circles for color palete */
 .colors {
   display: flex;
   position: relative;
-  margin-top: 70%;
+  margin-top: 60%;
 }
 
 .ball {
@@ -444,13 +451,9 @@ svg {
   filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
 }
 
-/**
-*
-    SECOND CONTAINER
-*
-*/
-.secondContainer {
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  gap: 50px;
 }

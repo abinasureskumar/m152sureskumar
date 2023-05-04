@@ -24,9 +24,9 @@ body {
 .containerLeft {
   width: 60%;
   height: 100vh;
-  background-color: white;
+  background-color: #F5F5F7;
   float: left;
-  color: #111;
+  color: #1D1D1F;
 }
 
 .textContainer {

@@ -26,6 +26,11 @@
     <div class="HomeContainer">
       <!-- RIGHT CONTAINER -->
       <div class="rightContainer">
+        <!-- BACK TO TOP -->
+        <div class="arrowBack">
+          <img id="up" src="./style/img/up.png" onclick="topFunction()" />
+        </div>
+
         <!-- Navigation -->
         <div id="navSidebar" class="sidebar">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -45,22 +50,43 @@
         <div id="menu" class="menu">
           <button class="openbtn" onclick="openNav()">☰</button>
         </div>
+
+        <a href="#bildContainer"
+          ><div class="box one">
+            <p>Bild</p>
+          </div></a
+        >
+        <a href="#videoContainer">
+          <div class="box two">
+            <p>Video</p>
+          </div></a
+        >
+        <a href="#soundContainer">
+          <div class="box three">
+            <p>Sound</p>
+          </div></a
+        >
       </div>
 
       <!-- LEFT CONTAINER -->
       <div class="leftContainer">
-        <!-- HomeIcon -->
-        <div class="homeIcon">
-          <a href="./index.html">
-            <img src="./style/img/home_icon_black.png" width="60px" />
-          </a>
+        <div class="blackBox">
+          <p>Hier werden die diversen Formate verglichen.</p>
         </div>
 
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop id="gVideo">
           <source src="./style/img/g_video.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </div>
     </div>
+    <!-- idk what happend to the first container -->
+    <div class="lmao" id="lmao"></div>
+    <!-- BILD CONTAINER -->
+    <div class="bildContainer" id="bildContainer"></div>
+    <!-- VIDEO CONTAINER -->
+    <div class="videoContainer" id="videoContainer"></div>
+    <!-- SOUND CONTAINER -->
+    <div class="soundContainer" id="soundContainer"></div>
   </body>
 </html>

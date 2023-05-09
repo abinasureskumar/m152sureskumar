@@ -333,7 +333,7 @@ body {
 .videoContainer {
   width: 100%;
   height: 100vh;
-  background-color: #f5f5f7;
+  background-color: #1a1a1a3a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,8 +352,17 @@ body {
 .video {
   border-radius: 30px;
   overflow: hidden;
+  /* border: 2px solid #ffffff; */
 }
 
+.videoText {
+  background-color: #f5f5f7;
+  color: #000000;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /**
 *
     SOUND CONTAINER
@@ -362,4 +371,49 @@ body {
 .soundContainer {
   width: 100%;
   height: 100vh;
+  background: rgb(164, 117, 207);
+  background: linear-gradient(
+    263deg,
+    rgba(164, 117, 207, 1) 7%,
+    rgba(44, 62, 80, 1) 100%
+  );
+}
+
+.sounds {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.sound {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.soundCard {
+  width: 70%;
+  height: 50vh;
+  background-color: #f5f5f7;
+  margin: auto;
+  border-radius: 30px;
+  margin-top: -100px;
+}
+
+.soundTitle {
+  font-size: 50px;
+  margin-left: 50px;
+  padding: 30px;
+}
+
+.soundDesc {
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: -40px;
+}
+
+.soundCard ol {
+  width: 80%;
+  margin-left: 50px;
 }

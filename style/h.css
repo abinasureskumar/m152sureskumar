@@ -86,9 +86,9 @@ html {
 .cardOne::after {
   background-image: linear-gradient(
     var(--rotate),
-    #e30303,
-    #e34a03 43%,
-    #ff8b00
+    #2a54f8,
+    #8160fc 43%,
+    #d86cff
   );
 }
 
@@ -96,9 +96,9 @@ html {
 .cardTwo::after {
   background-image: linear-gradient(
     var(--rotate),
-    #ff8b00,
-    #feb701 43%,
-    #feed01
+    #2a54f8,
+    #8160fc 43%,
+    #d86cff
   );
 }
 
@@ -106,9 +106,9 @@ html {
 .cardThree::after {
   background-image: linear-gradient(
     var(--rotate),
-    #feed01,
-    #acfe01 43%,
-    #008026
+    #2a54f8,
+    #8160fc 43%,
+    #d86cff
   );
 }
 
@@ -116,9 +116,9 @@ html {
 .cardFour::after {
   background-image: linear-gradient(
     var(--rotate),
-    #008026,
-    #00f8e4 43%,
-    #336eee
+    #2a54f8,
+    #8160fc 43%,
+    #d86cff
   );
 }
 
@@ -126,9 +126,9 @@ html {
 .cardFive::after {
   background-image: linear-gradient(
     var(--rotate),
-    #004dff,
-    #510686 43%,
-    #750686
+    #2a54f8,
+    #8160fc 43%,
+    #d86cff
   );
 }
 

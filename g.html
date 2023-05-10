@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style/g.css" />
     <link rel="stylesheet" type="text/css" href="style/sidenav_white.css" />
     <script type="text/javascript" src="/script/main.js"></script>
+    <script type="text/javascript" src="/script/g.js"></script>
     <link
       rel="icon"
       href="./style/img/LTSmiley6.png"
@@ -276,51 +277,83 @@
             </div>
           </div>
         </div>
+
+        <!-- pop up with description -->
+        <div>
+          <div class="popup-bild">
+            <button class="popup-button">
+              <img src="./style/img/info_icon.png" width="20px" />
+              <p>Click here to read about the different image sizes.</p>
+            </button>
+          </div>
+          <div class="popup-card popup-card-bild">
+            <h2>Popup Card Content</h2>
+            <p>This is the content of the popup card.</p>
+            <button class="close-button">×</button>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- VIDEO CONTAINER -->
     <div class="videoContainer" id="videoContainer">
-      <div class="videos">
-        <!-- video 1 -->
-        <div class="video">
-          <video width="400" controls>
-            <source src="./style/img/g/video/video.mp4" type="video/mp4" />
-            Your browser does not support HTML video.
-          </video>
-          <div class="videoText">Original 7.08 MB</div>
+      <div class="videoContainer222">
+        <div class="videos">
+          <!-- video 1 -->
+          <div class="video">
+            <video width="400" controls>
+              <source src="./style/img/g/video/video.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="videoText">Original 7.08 MB</div>
+          </div>
+          <!-- video 2 -->
+          <div class="video">
+            <video width="400" controls>
+              <source src="./style/img/g/video/video-26.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="videoText">5.27 MB</div>
+          </div>
+          <!-- video 3 -->
+          <div class="video">
+            <video width="400" controls>
+              <source src="./style/img/g/video/video-40.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="videoText">4.20 MB</div>
+          </div>
+          <!-- video 4 -->
+          <div class="video">
+            <video width="400" controls>
+              <source src="./style/img/g/video/video-60.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="videoText">3.03 MB</div>
+          </div>
+          <!-- video 5 -->
+          <div class="video">
+            <video width="400" controls>
+              <source src="./style/img/g/video/video-80.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="videoText">1.47 MB</div>
+          </div>
         </div>
-        <!-- video 2 -->
-        <div class="video">
-          <video width="400" controls>
-            <source src="./style/img/g/video/video-26.mp4" type="video/mp4" />
-            Your browser does not support HTML video.
-          </video>
-          <div class="videoText">5.27 MB</div>
+      </div>
+
+      <!-- pop up with description -->
+      <div>
+        <div class="popup-video">
+          <button class="popup-button">
+            <img src="./style/img/info_icon.png" width="20px" />
+            <p>Click here to read about the different image sizes.</p>
+          </button>
         </div>
-        <!-- video 3 -->
-        <div class="video">
-          <video width="400" controls>
-            <source src="./style/img/g/video/video-40.mp4" type="video/mp4" />
-            Your browser does not support HTML video.
-          </video>
-          <div class="videoText">4.20 MB</div>
-        </div>
-        <!-- video 4 -->
-        <div class="video">
-          <video width="400" controls>
-            <source src="./style/img/g/video/video-60.mp4" type="video/mp4" />
-            Your browser does not support HTML video.
-          </video>
-          <div class="videoText">3.03 MB</div>
-        </div>
-        <!-- video 5 -->
-        <div class="video">
-          <video width="400" controls>
-            <source src="./style/img/g/video/video-80.mp4" type="video/mp4" />
-            Your browser does not support HTML video.
-          </video>
-          <div class="videoText">1.47 MB</div>
+        <div class="popup-card popup-card-video">
+          <h2>Popup Card Content</h2>
+          <p>This is the content of the popup card.</p>
+          <button class="close-button">×</button>
         </div>
       </div>
     </div>
@@ -391,4 +424,22 @@
       </div>
     </div>
   </body>
+
+  <script>
+    // Get references to the popup card and the button that opens it
+    const popupCard = document.querySelector(".popup-card");
+    const popupButton = document.querySelector(".popup-button");
+    // Add a click event listener to the button
+    popupButton.addEventListener("click", () => {
+      // When the button is clicked, show the popup card
+      popupCard.style.display = "block";
+    });
+    // Get a reference to the close button inside the popup card
+    const closeButton = popupCard.querySelector(".close-button");
+    // Add a click event listener to the close button
+    closeButton.addEventListener("click", () => {
+      // When the close button is clicked, hide the popup card
+      popupCard.style.display = "none";
+    });
+  </script>
 </html>

@@ -426,20 +426,24 @@
   </body>
 
   <script>
-    // Get references to the popup card and the button that opens it
-    const popupCard = document.querySelector(".popup-card");
-    const popupButton = document.querySelector(".popup-button");
-    // Add a click event listener to the button
-    popupButton.addEventListener("click", () => {
-      // When the button is clicked, show the popup card
-      popupCard.style.display = "block";
+    const popupCards = document.querySelectorAll(".popup-card");
+    const popupButtons = document.querySelectorAll(".popup-button");
+
+    // Add click event listeners to all popup buttons
+    popupButtons.forEach((popupButton, index) => {
+      popupButton.addEventListener("click", () => {
+        // When the button is clicked, show the corresponding popup card
+        popupCards[index].style.display = "block";
+      });
     });
-    // Get a reference to the close button inside the popup card
-    const closeButton = popupCard.querySelector(".close-button");
-    // Add a click event listener to the close button
-    closeButton.addEventListener("click", () => {
-      // When the close button is clicked, hide the popup card
-      popupCard.style.display = "none";
+
+    // Add click event listeners to all close buttons
+    popupCards.forEach((popupCard) => {
+      const closeButton = popupCard.querySelector(".close-button");
+      closeButton.addEventListener("click", () => {
+        // When the close button is clicked, hide the popup card
+        popupCard.style.display = "none";
+      });
     });
   </script>
 </html>

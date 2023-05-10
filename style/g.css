@@ -346,6 +346,19 @@ body {
   display: none;
 }
 
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+  background-color: #f5f5f7;
+  border: none;
+}
+
+
 /* popup button*/
 .popup-button {
   display: inline-block;

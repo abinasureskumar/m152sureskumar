@@ -188,9 +188,26 @@ body {
 }
 
 .wImg:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.457));
   filter: drop-shadow(7px 8px 8px rgba(0, 0, 0, 0.431));
+}
+
+.imgFour {
+  margin-left: -205px !important;
+}
+
+.imgFive {
+  margin-top: -440px;
+}
+
+.imgSix {
+  margin-top: -440px;
+}
+
+.imgSeven {
+  margin-top: -440px;
+  margin-left: 205px;
 }
 
 /* PROGRAMMING */

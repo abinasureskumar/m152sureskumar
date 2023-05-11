@@ -4,8 +4,6 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Comfortaa", cursive;
-  width: 100%;
-  height: 100vh;
   color: #ffffff;
   background: rgb(84, 77, 201);
   background: linear-gradient(
@@ -14,4 +12,35 @@ body {
     rgba(60, 51, 193, 1) 43%,
     rgba(11, 0, 178, 1) 70%
   );
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 50vh;
+  width: 50%;
+  margin-top: -200px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.457));
+  filter: drop-shadow(7px 8px 8px rgba(255, 255, 255, 0.431));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  margin-top: -600px;
+  float: right;
 }
